@@ -44,26 +44,26 @@ footer {
 
 header {
     background-image: url('asset/head.png');
-    background-size: cover;  /* Menyesuaikan gambar agar menutupi seluruh elemen */
+    background-size: contain;  /* Menyesuaikan gambar agar menutupi seluruh elemen */
     background-position: center;  /* Menempatkan gambar di tengah elemen */
     background-repeat: no-repeat;  /* Menghindari pengulangan gambar */
     width: 100%;
     height: 250vh;  /* Menetapkan tinggi elemen sesuai dengan tinggi viewport */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Tambahkan media query untuk penyesuaian lebih lanjut pada perangkat yang lebih kecil */
-@media (max-width: 768px) {
-    header {
-        height: 50vh; /* Menyesuaikan tinggi untuk perangkat yang lebih kecil */
-    }
-}
+
 
 .header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
 }
 
 h2{
